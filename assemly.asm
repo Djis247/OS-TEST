@@ -12,5 +12,5 @@ _start:
 	mov edx, len		; Length of Output
 	int 0x80			; Intercept and execute system call (0x80)
 	mov eax, 0			; System call for exit
-	mov ebx, 1			; Return code
+	mov ebx, 0			; Return code
 	int 0x80			; Intercept and execute system call (0x80)
